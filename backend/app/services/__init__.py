@@ -1,0 +1,8 @@
+from app.services.geo_service import calculate_bucket_bounds
+from app.services.merchant_service import get_merchant, get_nearby_merchants, update_merchant_statistics
+from app.services.spending_profile_service import get_user_category_profile, update_user_category_profile, get_all_user_profiles
+from app.services.coupon_service import get_active_coupons_for_merchant, get_best_coupon_for_recommendation, redeem_coupon
+from app.services.category_rule_service import get_related_categories, is_category_allowed
+from app.services.price_similarity_service import calculate_price_similarity
+from app.services.distance_service import haversine_distance, calculate_distance_score
+from app.services.recommendation_audit_service import store_recommendation_log, get_recommendation_logs
